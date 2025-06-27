@@ -16,14 +16,14 @@ const UploadForm = () => {
 
     setLoading(true);
     try {
-      // const res = await fetch("https://muzair-010.huggingface.space/upload", {
-      //   method: "POST",
-      //   body: formData,
-      // });
-      const res = await fetch('http://127.0.0.1:8000/analyze-call', {
-        method: 'POST',
-        body: formData
+      const res = await fetch("https://muzair-010.huggingface.space/upload", {
+        method: "POST",
+        body: formData,
       });
+      // const res = await fetch('http://127.0.0.1:8000/analyze-call', {
+      //   method: 'POST',
+      //   body: formData
+      // });
       const data = await res.json();
       setResult(data.result || data.error);
     } catch (error) {
