@@ -16,7 +16,7 @@ const UploadForm = () => {
 
     setLoading(true);
     try {
-      const res = await fetch("https://muzair-010--cold-call-backend.hf.space/analyze-call", {
+      const res = await fetch("https://muzair-010-cold-call-backend.hf.space/analyze-call", {
         method: "POST",
         body: formData,
       });
