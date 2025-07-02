@@ -20,7 +20,7 @@ const UploadForm = () => {
     setError(null);
 
     try {
-      const res = await fetch("http://127.0.0.1:8000/analyze-call", {
+      const res = await fetch("https://muzair-010.huggingface.space/upload", {
         method: "POST",
         body: formData,
       });
