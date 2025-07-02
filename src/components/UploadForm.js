@@ -20,7 +20,7 @@ const UploadForm = () => {
     setError(null);
 
     try {
-      const res = await fetch("https://muzair-010.huggingface.space/analyze-call", {
+      const res = await fetch("https://muzair-010-cold-call-backend.hf.space/analyze-call", {
         method: "POST",
         body: formData,
       });
